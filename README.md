@@ -4,8 +4,6 @@
 This Laravel package allows you to create payment using Esewa.
 
 
-
-
 ## Usage/Examples
 ### Install Using Composer
 ```javascript
@@ -32,7 +30,7 @@ And publish "Dipesh79\LaravelEsewa\EsewaServiceProvider"
 Redirect the user to payment page from your controller
 
 ```
-use Dipesh79\LaravelPayeerCheckout\LaravelPayeerCheckout;
+use Dipesh79\LaravelEsewa\LaravelEsewa;
 
 //Your Controller Method
 public function esewaPayment()
