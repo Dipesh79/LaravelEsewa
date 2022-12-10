@@ -1,0 +1,26 @@
+{
+    "name": "dipesh79/laravel-esewa",
+    "description": "Laravel Esewa - A simple laravel package to integrate esewa payment.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dipesh79\\LaravelEsewa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dipesh79",
+            "email": "dipeshkhanal79@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dipesh79\\LaravelEsewa\\EsewaServiceProvider"
+            ]   
+        }
+    }
+}
