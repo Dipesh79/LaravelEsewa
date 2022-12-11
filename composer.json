@@ -11,7 +11,9 @@
     "authors": [
         {
             "name": "Dipesh79",
-            "email": "dipeshkhanal79@gmail.com"
+            "email": "dipeshkhanal79@gmail.com",
+            "homepage": "https://www.khanaldipesh.com.np",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
