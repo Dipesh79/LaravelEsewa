@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Dipesh79\LaravelEsewa;
 
 use Illuminate\Support\ServiceProvider;
 
