@@ -14,7 +14,7 @@ class LaravelEsewa
         $this->env = config('esewa.env');
     }
 
-    public function esewaCheckout($amount = 100, $tax_amount = 0, $service_charge = 0, $delivery_charge = 0, $order_id, $su, $fu)
+    public function esewaCheckout($amount, $tax_amount = 0, $service_charge = 0, $delivery_charge = 0, $order_id, $su, $fu)
     {
         if ($this->env == "Sandbox") {
             $esewa_url = "https://uat.esewa.com.np/epay/main/?";
