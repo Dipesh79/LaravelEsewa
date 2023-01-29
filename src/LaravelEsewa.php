@@ -21,7 +21,11 @@ class LaravelEsewa
         } elseif ($this->env == "Live") {
             $esewa_url = "https://esewa.com.np/epay/main/?";
         } else {
-            return "Please specify environment.";
+            throw new \Exception("Please specify environment");
+        }
+        if (!$this->merchant_id)
+        {
+            throw new \Exception("Please Enter Merchant Id");
         }
         $data = [
             'amt' => $amount,
