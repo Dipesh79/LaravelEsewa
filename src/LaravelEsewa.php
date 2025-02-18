@@ -17,7 +17,7 @@ class LaravelEsewa
     public function esewaCheckout($amount, $tax_amount = 0, $service_charge = 0, $delivery_charge = 0, $order_id, $su, $fu)
     {
         if ($this->env == "Sandbox") {
-            $esewa_url = "https://uat.esewa.com.np/epay/main/?";
+            $esewa_url = "https://rc.esewa.com.np/epay/main?";
         } elseif ($this->env == "Live") {
             $esewa_url = "https://esewa.com.np/epay/main/?";
         } else {

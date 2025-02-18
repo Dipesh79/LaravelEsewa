@@ -7,7 +7,7 @@ This Laravel package allows you to create payment using Esewa.
 
 ### Install Using Composer
 
-```javascript
+```sh
 composer require dipesh79/laravel-esewa
 ```
 
