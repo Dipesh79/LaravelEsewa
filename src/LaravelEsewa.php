@@ -6,27 +6,23 @@ namespace Dipesh79\LaravelEsewa;
 class LaravelEsewa
 {
     private $merchant_id;
-    private $env;
+    private $url;
 
     public function __construct()
     {
         $this->merchant_id = config('esewa.scd');
-        $this->env = config('esewa.env');
+        $this->url = config('esewa.url');
     }
 
     public function esewaCheckout($amount, $tax_amount = 0, $service_charge = 0, $delivery_charge = 0, $order_id, $su, $fu)
     {
-        if ($this->env == "Sandbox") {
-            $esewa_url = "https://rc.esewa.com.np/epay/main?";
-        } elseif ($this->env == "Live") {
-            $esewa_url = "https://esewa.com.np/epay/main/?";
-        } else {
-            throw new \Exception("Please specify environment");
-        }
+        $esewa_url = $this->url . "?";
+
         if (!$this->merchant_id)
         {
             throw new \Exception("Please Enter Merchant Id");
         }
+
         $data = [
             'amt' => $amount,
             'pdc' => $delivery_charge,
